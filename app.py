@@ -8,7 +8,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("all_comments_with_topics_and_sentiment.csv")
+    df = pd.read_csv("data/all_comments_with_topics_and_sentiment.csv")
 
     # Parse datetime with UTC awareness, then make a plain date column
     if "published_at" in df.columns:
